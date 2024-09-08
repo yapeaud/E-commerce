@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,15 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
-    
+
     <!-- The `<nav>` section in the HTML code you provided is creating a navigation bar for a website.
     Here's a breakdown of its components: -->
     <nav>
-        <div class="logo">
+        <article class="logo">
             <a href="index.html"><img src="images/logo-dark.png" alt=""></a>
-        </div>
+        </article>
         <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -25,34 +27,73 @@
             <li><a href="#">Product</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <div class="icons_sec">
+        <article class="icons_sec">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <a href=""><i class="fa-regular fa-user"></i></a>                                                                                  
+            <a href=""><i class="fa-regular fa-user"></i></a>
             <i class="fa-regular fa-heart"><span>0</span></i>
             <div class="cart_menu">
                 <i class="fa-solid fa-cart-shopping shop-cart"><span id="cart_count">4</span></i>
             </div>
             <h3>$550.25</h3>
-        </div>
-        <div class="bars">
+        </article>
+        <article class="bars">
             <i class="fa-solid fa-bars"></i>
-        </div>
+        </article>
     </nav>
 
     <header class="header">
-        <div class="hero_info">
-            <div class="contain">
-                <h2>COLLECTUION</h2>
+        <section class="hero_info">
+            <article class="contain">
+                <h2>COLLECTION</h2>
                 <h1>Exclusive <span>Winter</span></h1>
                 <p>New Modern Stylist Fashionable Wommen's Wear holder bag holder.</p>
-                <div class="shop_now_btn">
+                <div class="shop-now-btn">
                     <button class="shop_now_btn"><a href="">SHOP NOW</a></button>
+                </div>
+            </article>
+        </section>
+        <section class="hero-img">
+            <img src="images/boots.png" alt="">
+        </section>
+    </header>
+
+    <!-- COLLECTION SECTION -->
+    <div class="collection">
+        <div class="collection-big-card all-collection">
+            <img src="images/collection img1.png" alt="">
+            <div class="collection-text">
+                <p>HOT</p>
+                <h1>WOMEN's</h1>
+            </div>
+        </div>
+        <!-- small cards container -->
+        <div class="small-collection-card all-collection">
+            <!-- card 1 -->
+            <div class="collection-small-card all-collection">
+                <img src="images/collection img3.png" alt="">
+                <div class="collection-small-card-text">
+                    <p>COLLECTION</p>
+                    <h1>BAGS</h1>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="collection-small-card all-collection">
+                <img src="images/collection img4.png" alt="" class="speaker-img">
+                <div class="collection-small-card-text change-text">
+                    <p>BLUETOOTH</p>
+                    <h1>SPEAKER</h1>
                 </div>
             </div>
         </div>
-        <div class="hero-img">
-            <img src="images/boots.png" alt="">
+        <!-- Big card -->
+        <div class="collection-big-card all-collection last-cell-size">
+            <img src="images/collection img2.png" alt="" class="mens-img">
+            <div class="collection-text change-last-cell">
+                <p>TRENDING</p>
+                <h1>MEN'S</h1>
+            </div>
         </div>
-    </header>
+    </div>
 </body>
+
 </html>
