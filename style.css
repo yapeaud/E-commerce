@@ -216,8 +216,15 @@ ul li a:hover{
     position: relative;
     transition: .3s;
 }
-.collection .collection-big-card img{
+.collection-big-card img{
     transition: .3s;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.women-img{
+    width: 80%  !important;
+
 }
 .collection-text{
     display: flex;
@@ -320,7 +327,7 @@ ul li a:hover{
     background-color: #000;
     transition: .3s;
 }
-.change-last-cell{
+.change-last-cell:after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -337,4 +344,46 @@ ul li a:hover{
 .collection-small-card:hover .collection-small-card-text:after{
     width: 100%;
     cursor: pointer;
+}
+.collection-small-card:hover .change-text:after{
+    width: 100%;
+}
+.collection-small-card:hover .collection-text:after{
+    width: 100%;
+}
+.collection-big-card:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.collection-small-card:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.collection-big-card:hover .collection-text:after{
+    width: 100%;
+}
+
+/* PRODUCT SECTION */
+
+.product-heading-text{
+    text-align: center;
+    background-color: #fff;
+}
+.product-heading-texth1{
+    font-weight: 400;
+    font-size: 40px;
+    padding: 70px;
+}
+.product-menu{
+    padding: 40px;
+}
+.product-menu a{
+    color: #474747;
+    margin: 0 10px;
+    font-size: 18px;
+    transition:.3s ;
+}
+.product-menu a:hover{
+    color: #000;
+    letter-spacing: 1px;
 }
